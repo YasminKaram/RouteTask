@@ -17,7 +17,7 @@ samples, guidance on mobile development, and a full API reference.
 
 Project Structure:
 
-| ![screen1](assets/images/img.jpg) |
+| ![screen1](assets/images/img.png) |
 
 UI:
 | col 1      | col 2      |
