@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => HomeBloc(inj()),
+      create: (context) => HomeBloc(homeUsecase: inj()),
       child: ScreenUtilInit(
           designSize: Size(412, 892),
           ensureScreenSize: true,

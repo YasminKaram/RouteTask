@@ -118,7 +118,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             HomeBloc.data?[index].thumbnail??"",
                             HomeBloc.data?[index].title??"",
                             HomeBloc.data?[index].price.toString()??"",
-                            HomeBloc.data?[index].discountPercentage.toString()??"",
+                            ((HomeBloc.data?[index].price??0)+(HomeBloc.data?[index].discountPercentage??0)).toStringAsFixed(2),
                             HomeBloc.data?[index].rating.toString()??"",HomeBloc.data?[index].description??"");
                       },
                     ),

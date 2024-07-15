@@ -15,7 +15,7 @@ Future<void>setup()async{
   inj.registerFactory<DsHome>(() => DsHomeImpl(inj()));
   inj.registerFactory<RepoHome>(() => RepoImp(inj()));
   inj.registerFactory(() => HomeUsecase(inj()));
-  inj.registerFactory(() => HomeBloc(inj()));
+  inj.registerFactory(() => HomeBloc(homeUsecase: inj()));
 
   
 }

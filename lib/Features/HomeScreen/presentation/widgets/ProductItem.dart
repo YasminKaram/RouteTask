@@ -35,18 +35,16 @@ class ProductItem extends StatelessWidget {
                 fit: BoxFit.fill,
                 imageUrl: image??"",
                 width: 200.w,
-                height: 120.h,
+                height: 90.h,
               ),
               Image.asset("assets/images/fav.png")
             ],
           ),
-          Flexible(
-            child: Text(
-              name??"",
-              maxLines: 1,
-              style: AppStyles.productName,
-              overflow: TextOverflow.ellipsis,
-            ),
+          Text(
+            name??"",
+            maxLines: 1,
+            style: AppStyles.productName,
+            overflow: TextOverflow.ellipsis,
           ), 
               Flexible(
                 child: Text(
@@ -72,7 +70,7 @@ class ProductItem extends StatelessWidget {
 
                     Image.asset(
                       "assets/images/line.png",
-                      width: 49.w,
+                      width: 35.w,
                     )
                   ],
                 )
@@ -89,7 +87,7 @@ class ProductItem extends StatelessWidget {
                 Icon(
                   Icons.star_rate,
                   color: Colors.yellow,
-                  size: 15.sp,
+                  size: 17.sp,
                 ),
                 Spacer(),
                 Image.asset("assets/images/pluse.png",fit: BoxFit.fill,)
